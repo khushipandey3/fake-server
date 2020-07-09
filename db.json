@@ -1,0 +1,52 @@
+
+  {
+    
+    "AMF": [
+      {
+        "Label" : "AMF-airtel",
+        "UE_Info": "SUPI",
+        "gNB_list": "None",
+        "gNB_Info" : "gNB ID or IP" ,
+        "Full_NG-reset" : "gNB ID or IP" ,
+        "Partial_NG-reset": ["SUPI-1","SUPI-2"],
+        "AMF_initiated_dereg": "SUPI"
+        },
+        {
+        "Label" : "AMF-vodafone",
+        "UE_Info": "SUPI",
+        "gNB_list": "None",
+        "gNB_Info" : "gNB ID or IP" ,
+        "Full_NG-reset" : "gNB ID or IP" ,
+        "Partial_NG-reset": ["SUPI-1","SUPI-2"],
+        "AMF_initiated_dereg": "SUPI"
+        }
+    ],
+    "SMF": [
+      {
+        "Label" : "SMF-airtel",
+        "session_info": "SUPI",
+        "4G_session_info": "IMSI",
+        "delete_PFCP_assoc" : "UPFFQDN" 
+        },
+        {
+        "Label" : "SMF-vodafone",
+        "session_info": "SUPI",
+        "4G_session_info": "IMSI",
+        "delete_PFCP_assoc" : "UPFFQDN" 
+        }
+    ],
+    "UMF": [
+      {
+        "Label" : "UMF-airtel",
+        "list_SMFs-reset": ["value-1","value-2"],
+        "graceful_shutdown": "SMF IP , minutes"
+        },
+        {
+        "Label" : "UMF-vodafone",
+        "list_SMFs-reset": ["value-1","value-2"],
+        "graceful_shutdown": "SMF IP , minutes"
+        }
+    ]
+  }
+  
+  
